@@ -25,3 +25,13 @@ jobs:
       env:
         SUPABASE_PASSWORD: ${{ secrets.SUPABASE_PASSWORD }}
       run: python untitled21.py
+    - name: Run ETL Script
+      env:
+        SUPABASE_PASSWORD: ${{ secrets.SUPABASE_PASSWORD }} # هيروح يجيبها من الخزنة
+      run: python extract.py
+
+
+
+
+
+
